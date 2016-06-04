@@ -64,7 +64,7 @@ function ldap_servers_requirements($phase) {
 *
 * @ingroup config_upgrade
 */
-function ldap_servers_update_8000() {
+function ldap_servers_update_8001() {
   if (function_exists('update_variables_to_config')) {
     update_variables_to_config('ldap_servers.settings', array(
       'ldap_servers_encryption' => 'encryption',
